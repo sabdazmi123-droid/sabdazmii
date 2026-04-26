@@ -1,0 +1,65 @@
+{
+	"name": "vscode-env-ally",
+	"displayName": "Env Ally",
+	"description": "Dotenv extension to display the env data.",
+	"version": "0.2.5",
+	"type": "module",
+	"engines": {
+		"vscode": "^1.85.0"
+	},
+	"keywords": [
+		"dotenv",
+		"env",
+		"io",
+		"hover",
+		"vscode",
+		"nodejs",
+		"python",
+		"go",
+		"golang",
+		"ruby",
+		"php",
+		"rust"
+	],
+	"publisher": "plumbiu",
+	"packageManager": "pnpm@8.10.5",
+	"categories": [
+		"Debuggers",
+		"Programming Languages",
+		"Visualization"
+	],
+	"activationEvents": [
+		"workspaceContains:.env*"
+	],
+	"main": "./dist/index.cjs",
+	"contributes": {
+		"commands": []
+	},
+	"scripts": {
+		"vscode:prepublish": "pnpm run build",
+		"vscode:publish": "vsce publish --no-dependencies",
+		"build": "tsup",
+		"dev": "pnpm build --watch src",
+		"test": "vitest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Plumbiu/vscode-env-ally"
+	},
+	"devDependencies": {
+		"@plumbiu/eslint-config": "^0.2.0",
+		"@types/node": "~20.10.4",
+		"@types/vscode": "^1.85.0",
+		"dotenv": "^16.3.1",
+		"eslint": "^8.56.0",
+		"tiny-fast-glob": "^0.1.2",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3",
+		"vitest": "^1.0.4"
+	},
+	"__metadata": {
+		"installedTimestamp": 1777021682170,
+		"targetPlatform": "undefined",
+		"size": 179017
+	}
+}
